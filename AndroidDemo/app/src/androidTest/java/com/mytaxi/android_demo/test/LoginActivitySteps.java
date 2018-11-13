@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.support.test.rule.ActivityTestRule;
 import android.support.test.rule.GrantPermissionRule;
 import com.mytaxi.android_demo.activities.AuthenticationActivity;
-import com.mytaxi.android_demo.page.HomepageActivity;
 import com.mytaxi.android_demo.page.LoginActivity;
 import org.junit.Rule;
 import cucumber.api.java.After;
