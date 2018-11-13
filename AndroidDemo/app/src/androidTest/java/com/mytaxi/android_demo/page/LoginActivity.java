@@ -52,7 +52,7 @@ public class LoginActivity extends Activity {
     }
 
     public void verifyLoginFail(){
-        onView(isRoot()).perform(BaseUtil.waitForSecond(TimeUnit.SECONDS.toMillis(2)));
+        onView(isRoot()).perform(BaseUtil.waitForSecond(TimeUnit.SECONDS.toMillis(3)));
         onView(withId(id.textSearch)).check(doesNotExist());
         onView(withText(string.message_login_fail)).check(matches(isDisplayed()));
     }

@@ -1,5 +1,6 @@
 package com.mytaxi.android_demo.test;
 
+import android.Manifest;
 import android.app.Activity;
 import android.content.Intent;
 import android.support.test.rule.ActivityTestRule;
@@ -20,7 +21,7 @@ public class LoginActivitySteps {
     public ActivityTestRule<AuthenticationActivity> activityTestRule = new ActivityTestRule<>(AuthenticationActivity.class);
 
     @Rule
-    public GrantPermissionRule permissionRule = GrantPermissionRule.grant(android.Manifest.permission.ACCESS_FINE_LOCATION);
+    public GrantPermissionRule permissionRule = GrantPermissionRule.grant(Manifest.permission.ACCESS_FINE_LOCATION);
 
     private Activity activity;
 

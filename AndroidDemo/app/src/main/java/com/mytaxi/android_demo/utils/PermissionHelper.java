@@ -26,6 +26,7 @@ public class PermissionHelper {
                     new String[]{android.Manifest.permission.ACCESS_FINE_LOCATION},
                     PERMISSIONS_REQUEST_ACCESS_FINE_LOCATION);
         }
+        mLocationPermissionGranted = true;
     }
 
     public boolean isLocationPermissionGranted() {
