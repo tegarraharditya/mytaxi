@@ -7,6 +7,9 @@ import cucumber.api.CucumberOptions;
 import cucumber.api.android.CucumberInstrumentationCore;
 @CucumberOptions(
         features = "features",
+        plugin = { "pretty", "json:target/cucumber-reports/Cucumber.json",
+                "junit:target/cucumber-reports/Cucumber.xml",
+                "html:target/cucumber-reports"},
         glue = "com.mytaxi.android_demo.test")
 public class Instrumentation extends MonitoringInstrumentation {
 
